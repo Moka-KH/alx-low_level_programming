@@ -3,7 +3,8 @@
 /**
  * main - Entry point to the program =)
  *
- * Description: prints fixed message followed by a standard error line =\
+ * Description: prints fixed message followed by
+ *	a standard error line =\
  *
  * Return: 1 (error)
  */
