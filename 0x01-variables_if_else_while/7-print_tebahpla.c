@@ -11,6 +11,7 @@
 int main(void)
 {
 	char var = 'z';
+
 	while (var >= 'a')
 	{
 		putchar(var);
