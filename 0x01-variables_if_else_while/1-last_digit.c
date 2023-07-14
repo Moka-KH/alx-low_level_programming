@@ -6,7 +6,6 @@
  *
  * Description: n gets random value each execution 
  *	then prints message depends on n last digit
- *
  * Return: 0 (Success)
  */
 int main(void)
