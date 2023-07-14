@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
  * main - Entry point
  *
- * Description: n gets random value each execution 
- *	then prints message depends on n last digit
+ *Description: task 2
  * Return: 0 (Success)
  */
+
 int main(void)
 {
 	int n;
