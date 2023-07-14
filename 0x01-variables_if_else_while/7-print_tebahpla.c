@@ -5,14 +5,13 @@
 /**
  * main - Entry point
  *
- * Return: zero 
+ * Return: zero
  */
 
 int main(void)
 {
-	char var= 'z';
-	
-	while(var >= 'a')
+	char var = 'z';
+	while (var >= 'a')
 	{
 		putchar(var);
 		var--;
