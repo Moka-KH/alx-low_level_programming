@@ -4,7 +4,8 @@
 /**
  * main - Entry point
  *
- * Description: n gets random value each execution then prints message depends on n last digit
+ * Description: n gets random value each execution 
+ *	then prints message depends on n last digit
  *
  * Return: 0 (Success)
  */
