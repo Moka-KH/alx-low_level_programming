@@ -3,8 +3,7 @@
 #include <time.h>
 /**
  * main - Entry point
- * Description: n gets random value each execution and the code prints if it is +ve
- * 		-ve, or 0 =)
+ * Description: n gets random value each execution and the code prints state of n
  * Return: 0 (Success)
  */
 int main(void)
