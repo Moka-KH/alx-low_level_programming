@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 - task 2
  *
- * Description: prints 10 times the alphabet, in lowercase, followed by a new line
+ * Description: prints 10 times the alphabet, in lowercase
  *
  * Return: void
  */
