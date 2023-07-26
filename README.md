@@ -1,1 +1,1 @@
-this is c repo
+this dir for pointer again
