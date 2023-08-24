@@ -15,7 +15,7 @@ int is_prime(unsigned int n, unsigned int iter)
 		else
 			return (0);
 	}
-	return (0 + is_prime(n, c + 1));
+	return (0 + is_prime(n, iter + 1));
 }
 /**
  * is_prime_number - shows if the input is a prime no. or not
