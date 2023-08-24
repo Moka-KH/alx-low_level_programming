@@ -8,7 +8,7 @@
  */
 int power_operation(int n, int iter)
 {
-	if (iter % (n / c) == 0)
+	if (iter % (n / iter) == 0)
 	{
 		if (iter * (n / iter) == n)
 			return (iter);
