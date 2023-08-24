@@ -1,11 +1,13 @@
 #include "lists.h"
 /**
- * add_node - adds a new node
+ * add_node -  adds a new node
+ * at the beginning of a list_t list.
  *
- * @head: Param of the head node
- * @str: param of the element str 
+ * @head: Param with the head node
+ * @str: param with the element str in
+ * the structure
  *
- * Return: head of list
+ * Return: the head of the linked list
  */
 list_t *add_node(list_t **head, const char *str)
 {
