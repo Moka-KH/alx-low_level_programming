@@ -1,12 +1,12 @@
 #include "lists.h"
 /**
  * add_node - adds a new node
- *
  * @head: Param of the head node
  * @str: param of the element str 
  *
  * Return: head of list
  */
+
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *newNode;
