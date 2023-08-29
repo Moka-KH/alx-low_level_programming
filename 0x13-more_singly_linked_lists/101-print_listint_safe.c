@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * add_New_Node - reallocates memory for an array of pointers
+ * add_New_Node - reallocates memory 
+ * for an array of pointers
  * @list: old list
  * @size: size of new list
  * @new: new node to be added
