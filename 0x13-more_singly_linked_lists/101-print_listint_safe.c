@@ -1,6 +1,7 @@
 #include "lists.h"
 
 
+
 /**
  * add_New_Node - reallocates memory 
  * for an array of pointers
@@ -29,7 +30,7 @@ const listint_t **add_New_Node(const listint_t **list, size_t size, const listin
 }
 
 /**
- * print_listint_safe - prints a listint_t linked list.
+ * print_listint_safe - prints a listint_t
  * @head: pointer to head
  *
  * Return: num of nodes
