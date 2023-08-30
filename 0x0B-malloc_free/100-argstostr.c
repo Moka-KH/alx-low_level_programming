@@ -2,66 +2,43 @@
 #include <stdlib.h>
 
 /**
- * ch_free_grid - frees a 2D array
- * @grid: multid array of char
- * @height: height of the arr
- *
- * Return: void
+ * argstostr - concatenates all arguments of your program
+ * @ac: number of arguments
+ * @av: array containing arguments
+ * Return: A pointer to new string that has all arguments
+ * or NULL if ac == 0, if av == NULL, or if failed
  */
-void ch_free_grid(char **grid, unsigned int height)
+char *argstostr(int ac, char **av)
 {
-	if (grid != NULL && height != 0)
-	{
-		for (; height > 0; height--)
-			free(grid[height]);
-		free(grid[height]);
-		free(grid);
-	}
-}
+	char *new_str;
+	int len = 0, i = 0, j, k = 0;
 
-/**
- * strtow - splits a string into words
- * @str: string
- *
- * Return: pointer of an array of integers
- */
-char **strtow(char *str)
-{
-	char **arr;
-	unsigned int c, height, i, j, a1;
+	if (ac <= 0 || av == NULL)
+		return (NULL);
 
-	if (str == NULL || *str == '\0')
-		return (NULL);
-	for (c = height = 0; str[c] != '\0'; c++)
-		if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
-			height++;
-	arr = malloc((height + 1) * sizeof(char *));
-	if (arr == NULL || height == 0)
+	for (; i < ac; i++)
 	{
-		free(arr);
-		return (NULL);
+		for (j = 0; av[i][j]; j++)
+			len++;
+		len++;
 	}
-	for (i = a1 = 0; i < height; i++)
+
+	len++;
+	new_str = malloc(len * sizeof(char));
+	if (new_str == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
 	{
-		for (c = a1; str[c] != '\0'; c++)
+		for (j = 0; av[i][j]; j++)
 		{
-			if (str[c] == ' ')
-				a1++;
-			if (str[c] != ' ' && (str[c + 1] == ' ' || str[c + 1] == '\0'))
-			{
-				arr[i] = malloc((c - a1 + 2) * sizeof(char));
-				if (arr[i] == NULL)
-				{
-					ch_free_grid(arr, i);
-					return (NULL);
-				}
-				break;
-			}
+			new_str[k] = av[i][j];
+			k++;
 		}
-		for (j = 0; a1 <= c; a1++, j++)
-			arr[i][j] = str[a1];
-		arr[i][j] = '\0';
+		new_str[k] = '\n';
+		k++;
 	}
-	arr[i] = NULL;
-	return (arr);
+
+	new_str[k] = '\0';
+	return (new_str);
 }
